@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background: #eee;
+}
+
+#frm {
+    border: solid gray 1px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 100px auto;
+    background: white;
+    padding: 50px;
+}
+
+.btn {
+    display: inline;
+    color: #fff;
+    background: #337ab7;
+    padding: 7px;
+    border-radius: 10%;
+}
+
+#logBtn {
+    float: left;
+}
+
+#regBtn {
+    float: right;
+}
+
+#buttons {
+    display: block;
+}
+
+input {
+    float: right;
+}
