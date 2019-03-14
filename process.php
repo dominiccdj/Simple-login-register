@@ -7,11 +7,11 @@ if ($link->connect_error) {
     die("Connection failed: " . $link->connect_error);
 }
 
-// Get username and password from login screen
+// Get username and password from login screen and remove
+// empty spaces, slashes and convert special characters to HTML
+// entities to avoid possible SQL injection
 $username = $password = "";
 
-// Removing empty spaces, slashes and converting special characters to HTML
-// entities to avoid possible SQL injection
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = test_input($_POST["user"]);
     $password = test_input($_POST["pass"]);
